@@ -1,0 +1,13 @@
+.title {
+    font-family:'Source Code Pro', sans-serif;;
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: fit-content;
+}
+
+a.title {
+    text-decoration: none;
+    color: rgb(215, 231, 241);
+}
