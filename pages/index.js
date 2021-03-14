@@ -1,7 +1,9 @@
-import Logo from '../front/atoms/logo'
+import App from '../src/organisms/App'
 
 function Index() {
-    return <Logo></Logo>
+    return <App>
+
+    </App>
 }
 
 export default Index;
