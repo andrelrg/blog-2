@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from '../atoms/Logo'
 
 function NavBar() {
-    <Logo />
+    return (<Logo />);
 }
 
 export default NavBar;

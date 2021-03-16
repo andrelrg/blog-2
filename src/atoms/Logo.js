@@ -1,15 +1,26 @@
 import React from "react";
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-const A = styled.a`
+const StyledA = styled.a`
     text-decoration: none;
     color: rgb(215, 231, 241);
 `;
 
+const blink = keyframes`
+    50% {
+        opacity: 0;
+    }
+`;
+
+const BlinkerSpan = styled.span`
+    animation: ${blink} 1s linear infinite;
+    font-size: 18px;
+`;
+
 function Logo() {
     return (
-    <div class="title">
-        <A href="/">$ programmer_life<span class="blinker"> █</span></A>
+    <div>
+        <StyledA href="/">$ programmer_life<BlinkerSpan> █</ BlinkerSpan></StyledA>
     </div>);
 }
 
