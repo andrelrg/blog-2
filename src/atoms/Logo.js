@@ -17,11 +17,16 @@ const BlinkerSpan = styled.span`
     font-size: 18px;
 `;
 
+const LogoHolder = styled.div`
+    display: flex;
+    justify-content: flex-start;
+`;
+
 function Logo() {
     return (
-    <div>
+    <LogoHolder>
         <StyledA href="/">$ programmer_life<BlinkerSpan> █</ BlinkerSpan></StyledA>
-    </div>);
+    </LogoHolder>);
 }
 
 
