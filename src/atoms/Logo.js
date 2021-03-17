@@ -25,7 +25,7 @@ const LogoHolder = styled.div`
 function Logo() {
     return (
     <LogoHolder>
-        <StyledA href="/">$ programmer_life<BlinkerSpan> █</ BlinkerSpan></StyledA>
+        <StyledA href="/">$ programmer_life<BlinkerSpan> _</ BlinkerSpan></StyledA>
     </LogoHolder>);
 }
 
