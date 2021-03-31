@@ -9,11 +9,12 @@ const Body = styled.div`
     margin-right: auto;
 `;
 
-function App() {
+function App({children}) {
     return (
         <Body>
             <Head />
             <NavBar />
+            <div>{children}</div>
         </Body>
     );
 }
