@@ -1,10 +1,10 @@
 import React from "react";
 import App from '../src/organisms/App'
 
-function Posts() {
+function About() {
     return (<App>
     </App>)
     
 }
 
-export default Posts;
+export default About;
