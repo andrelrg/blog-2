@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../atoms/Logo'
-import Link from '../atoms/Link'
+import Link from '../atoms/NavLink'
 import styled from 'styled-components'
 
 const StyledHr = styled.hr`
