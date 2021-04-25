@@ -1,5 +1,5 @@
 function PostDetail() {
-    return
+    return (<a></a>)
     
 }
 
