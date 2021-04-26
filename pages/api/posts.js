@@ -1,6 +1,6 @@
 import Posts from '../../lib/models/posts'
 
-export default async  function getAllPosts(req, res) {
+export default async function getAllPosts(req, res) {
     try {
         if (req.method != 'GET') {
             res.status(405).json({message: 'Method not allowed'})
@@ -14,5 +14,3 @@ export default async  function getAllPosts(req, res) {
         return; 
     }
 } 
-
-
