@@ -30,8 +30,6 @@ function NavBar() {
     const router = useRouter()
     let links = {
         home: router.pathname == "/",
-        posts: router.pathname == "/posts",
-        threads: router.pathname == "/threads",
         about: router.pathname == "/about"
 
     }
@@ -42,8 +40,6 @@ function NavBar() {
                 <Logo />
                 <LinksHolder>
                    <Link href="/" active={links.home}>Home</Link>
-                   <Link href="/posts" active={links.posts}>Posts</Link>
-                   <Link href="/threads" active={links.threads}>Threads</Link>
                    <Link href="/about" active={links.about}>About</Link>
                 </LinksHolder>
             </StyledNav>
