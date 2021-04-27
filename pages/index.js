@@ -11,7 +11,7 @@ function Index(props) {
 
 export async function getStaticProps() {
 
-    const res = await fetch('https://blog-2-git-progress-1-andrelrg.vercel.app/api/posts/')
+    const res = await fetch('/api/posts/')
     const posts = await res.json()
 
     return {
