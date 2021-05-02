@@ -21,6 +21,11 @@ const LinksHolder = styled.div`
     justify-content: flex-end;
 `;
 
+const LinkWrapper = styled.div`
+    padding-left: 15px;
+    padding-right: 15px;
+`;
+
 const NavHolder = styled.div`
     position: sticky;
 `;
@@ -39,8 +44,8 @@ function NavBar() {
             <StyledNav>
                 <Logo />
                 <LinksHolder>
-                   <Link href="/" active={links.home}>Home</Link>
-                   <Link href="/about" active={links.about}>About</Link>
+                    <LinkWrapper><Link href="/" active={links.home}>Home</Link></LinkWrapper>
+                   <LinkWrapper><Link href="/about" active={links.about}>About</Link></LinkWrapper>
                 </LinksHolder>
             </StyledNav>
             <StyledHr ></StyledHr>

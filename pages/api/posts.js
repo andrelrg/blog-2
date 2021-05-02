@@ -20,9 +20,6 @@ export default async function getAllPosts(req, res) {
             const r = await Promise.all(ret);
             res.json(r)          
         })();
-        
-        
-
 
     }catch (error) {
         res.status(500).json({'teste': error.message });

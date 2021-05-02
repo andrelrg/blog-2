@@ -3,22 +3,26 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 const StyledLink = styled.a`
-    padding-left: 15px;
-    padding-right: 15px;
     color: ${props => props.active ? "var(--theme-color)" : "var(--font-color)"};
     text-decoration: none;
 `
 
 const LinkWrapper = styled.div`
-  &:hover ${StyledLink} {
-    color: var(--theme-color);
-  }
+    cursor: pointer;
+    &:hover ${StyledLink} {
+        color: var(--theme-color);
+    }
 `
 
-function NavLink(props) {
-    return (
-        <LinkWrapper><Link href={props.href}><StyledLink active={props.active}>{props.children}</StyledLink></Link></LinkWrapper>
-    )
+function NavLink({href, active, children, prefetch=true}) {
+    if (prefetch)
+        return (
+            <LinkWrapper><Link href={href}><StyledLink active={active}>{children}</StyledLink></Link></LinkWrapper>
+        )
+    else
+        return (
+            <LinkWrapper><a href={href}><StyledLink active={active}>{children}</StyledLink></a></LinkWrapper>
+        )
 }
 
 export default NavLink;
