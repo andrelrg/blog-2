@@ -2,7 +2,7 @@ import React from "react"
 import App from '../../src/organisms/App'
 
 
-function PostDetail({post}) {
+function PostDetail() {
     return (<App>
         
     </App>)
@@ -17,6 +17,12 @@ export async function getStaticPaths() {
     };
 }
 
+export async function getStaticProps() {
 
+    return {
+        props: {
+        }
+    }
+}
 
 export default PostDetail
