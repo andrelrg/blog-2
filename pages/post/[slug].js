@@ -17,16 +17,6 @@ export async function getStaticPaths() {
     };
 }
 
-export async function getStaticProps({slug}) {
-//    const server = process.env.NODE_ENV !== 'production' ? 'http://localhost:3000' : 'https://blog-2-git-progress-1-andrelrg.vercel.app';
-//    const res = await fetch(server + '/api/post/' + slug)
-//    const posts = await res.json()
-//
-//    return {
-//        props: {
-//            posts: posts
-//        }
-//    }
-}
+
 
 export default PostDetail
