@@ -5,7 +5,7 @@ function Head() {
     return (
     <Helmet>
         <meta charset="utf-8" />
-        <title>$programmer_life</title>
+        <title>$programmerLife</title>
         <meta name="description" content="" />
     </Helmet>);
 }
