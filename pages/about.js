@@ -1,10 +1,8 @@
 import React from "react";
-import App from '../src/organisms/App'
+import App from "../src/organisms/App";
 
 function About() {
-    return (<App>
-    </App>)
-    
+  return <App>Hello world!</App>;
 }
 
 export default About;
